@@ -1,13 +1,11 @@
-module CmySQLosx [system] {
-    header "/usr/local/include/mysql/mysql.h"
-    header "/usr/local/include/mysql/errmsg.h"
-    link "mysqlclient"
+module CSQLiteLinux [system] {
+    header "/usr/include/sqlite3.h"
+    link "sqlite3"
     export *
 }
 
-module CmySQLlinux [system] {
-    header "/usr/include/mysql/mysql.h"
-    header "/usr/include/mysql/errmsg.h"
-    link "mysqlclient"
+module CSQLiteDarwin [system] {
+    header "/usr/local/opt/sqlite/include/sqlite3.h"
+    link "sqlite3"
     export *
 }
